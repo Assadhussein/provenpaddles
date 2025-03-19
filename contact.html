@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ProvenPaddles</title>
+    <link rel="icon" type="image/png" href="media/icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            background-color: #fff;
+            font-family: Shrikhand;
+            font-size: xx-large;
+        }
+
+        .logo img {
+            height: 8rem;
+        }
+
+        .hamburger {
+            cursor: pointer;
+            font-size: 28px;
+            z-index: 20;
+            display: none;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .nav-links a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #007352;
+            display: block;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        h1 {
+            font-family: Shrikhand;
+            color: #007352;
+            letter-spacing: 1px;
+            font-size: xx-large;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .buy-now-btn {
+            display: inline-block;
+            background-color: #007352;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .buy-now-btn:link,
+        .buy-now-btn:visited,
+        .buy-now-btn:hover,
+        .buy-now-btn:active {
+            color: white;
+            text-decoration: none;
+        }
+
+        .buy-now-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin: 20px auto;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+        .form-group label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #007352;
+            font-size: 16px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #007352;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 115, 82, 0.5);
+        }
+
+        .contact-card {
+            background-color: #fff;
+            /* Card background */
+            border-radius: 8px;
+            /* Rounded corners */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            /* Soft shadow */
+            padding: 2rem;
+            max-width: 600px;
+            /* Limit width for a card look */
+            margin: 0 auto;
+            /* Center horizontally */
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+                z-index: 99999;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                right: 20px;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                z-index: 10;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .logo img {
+                height: 8rem;
+            }
+
+            header {
+                font-size: larger;
+            }
+
+            .form-group {
+                padding: 8px;
+            }
+
+            .form-group label {
+                font-size: 15px;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                font-size: 15px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="media/logo.svg"></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="contact-card">
+        <form
+            action="https://script.google.com/macros/s/AKfycbwwyCk_mSLsfvMqvZynAY5qSXuhOm71VI3IG50U-Z-dkQnq6Ra9nM8YaVvi6e5l647c/exec"
+            method="POST">
+            <div class="form-group">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+                <label for="contact-message">Message:</label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="buy-now-btn">Send Message</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
