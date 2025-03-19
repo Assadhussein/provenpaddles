@@ -74,7 +74,7 @@
 
         .filter-btn.active,
         .filter-btn:hover {
-            background-color: #A4D100;
+            background-color: #007352;
             color: #fff;
         }
 
@@ -1426,12 +1426,6 @@
             </script>
         </div>
 
-        <div class="product-card balls">
-            <h3>Balls Coming Soon...</h3>
-        </div>
-        <div class="product-card nets">
-            <h3>Nets Coming Soon...</h3>
-        </div>
         <div class="product-card grips" id='product-component-1742405728536'>
             <script type="text/javascript">
                 /*<![CDATA[*/
@@ -1568,6 +1562,151 @@
                 /*]]>*/
             </script>
         </div>
+
+        <div class="product-card grips" id='product-component-1742416822046'>
+            <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                    if (window.ShopifyBuy) {
+                        if (window.ShopifyBuy.UI) {
+                            ShopifyBuyInit();
+                        } else {
+                            loadScript();
+                        }
+                    } else {
+                        loadScript();
+                    }
+                    function loadScript() {
+                        var script = document.createElement('script');
+                        script.async = true;
+                        script.src = scriptURL;
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                        script.onload = ShopifyBuyInit;
+                    }
+                    function ShopifyBuyInit() {
+                        var client = ShopifyBuy.buildClient({
+                            domain: '3pfktu-b2.myshopify.com',
+                            storefrontAccessToken: '9e605a347414a125cd1c756334cdc3e1',
+                        });
+                        ShopifyBuy.UI.onReady(client).then(function (ui) {
+                            ui.createComponent('product', {
+                                id: '8116604076077',
+                                node: document.getElementById('product-component-1742416822046'),
+                                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                                options: {
+                                    "product": {
+                                        "styles": {
+                                            "product": {
+                                                "@media (min-width: 601px)": {
+                                                    "max-width": "calc(25% - 20px)",
+                                                    "margin-left": "20px",
+                                                    "margin-bottom": "50px"
+                                                }
+                                            },
+                                            "button": {
+                                                ":hover": {
+                                                    "background-color": "#00684a"
+                                                },
+                                                "background-color": "#007352",
+                                                ":focus": {
+                                                    "background-color": "#00684a"
+                                                }
+                                            }
+                                        },
+                                        "buttonDestination": "modal",
+                                        "contents": {
+                                            "options": false
+                                        },
+                                        "text": {
+                                            "button": "View product"
+                                        }
+                                    },
+                                    "productSet": {
+                                        "styles": {
+                                            "products": {
+                                                "@media (min-width: 601px)": {
+                                                    "margin-left": "-20px"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "modalProduct": {
+                                        "contents": {
+                                            "img": false,
+                                            "imgWithCarousel": true,
+                                            "button": false,
+                                            "buttonWithQuantity": true
+                                        },
+                                        "styles": {
+                                            "product": {
+                                                "@media (min-width: 601px)": {
+                                                    "max-width": "100%",
+                                                    "margin-left": "0px",
+                                                    "margin-bottom": "0px"
+                                                }
+                                            },
+                                            "button": {
+                                                ":hover": {
+                                                    "background-color": "#00684a"
+                                                },
+                                                "background-color": "#007352",
+                                                ":focus": {
+                                                    "background-color": "#00684a"
+                                                }
+                                            }
+                                        },
+                                        "text": {
+                                            "button": "Add to cart"
+                                        }
+                                    },
+                                    "option": {},
+                                    "cart": {
+                                        "styles": {
+                                            "button": {
+                                                ":hover": {
+                                                    "background-color": "#00684a"
+                                                },
+                                                "background-color": "#007352",
+                                                ":focus": {
+                                                    "background-color": "#00684a"
+                                                }
+                                            }
+                                        },
+                                        "text": {
+                                            "total": "Subtotal",
+                                            "button": "Checkout"
+                                        }
+                                    },
+                                    "toggle": {
+                                        "styles": {
+                                            "toggle": {
+                                                "background-color": "#007352",
+                                                ":hover": {
+                                                    "background-color": "#00684a"
+                                                },
+                                                ":focus": {
+                                                    "background-color": "#00684a"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                            });
+                        });
+                    }
+                })();
+                /*]]>*/
+            </script>
+        </div>
+
+        <div class="product-card balls">
+            <h3>Balls Coming Soon...</h3>
+        </div>
+        <div class="product-card nets">
+            <h3>Nets Coming Soon...</h3>
+        </div>
+
     </section>
 
     <footer class="footer">
