@@ -27,6 +27,25 @@
       font-size: xx-large;
     }
 
+    h1,
+    h2,
+    h3 {
+      color: #002f6d;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      color: #002f6d;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-family: Montserrat;
+    }
+
+
     .logo img {
       height: 8rem;
     }
@@ -71,52 +90,22 @@
       color: #ffeedc;
       padding: 20px;
       max-width: 80%;
-      font-family: Shrikhand;
-      background-color: #002f6dad;
+      font-family: Montserrat;
+      background-color: #323232ca;
       border-radius: 10px;
     }
 
-    .hero-text h1 {
-      border: 0px;
-      margin: 0;
-      font-size: xxx-large;
+    .hero-text h1,
+    .hero-text h2,
+    .hero-text p {
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      font-weight: 700;
     }
 
-    .hero-text p {
-      font-size: x-large;
-    }
 
     .section {
       padding: 40px 20px;
-      text-align: center;
-    }
-
-    h2 {
-      font-family: Shrikhand;
-      color: #007352;
-      letter-spacing: 1px;
-    }
-
-    h2, h3, p {
-      letter-spacing: 1px;
-    }
-
-    h1 {
-      letter-spacing: 2px;
-    }
-
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-
-    .product-card {
-      width: 300px;
-      margin: 10px;
-      padding: 15px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
       text-align: center;
     }
 
@@ -127,56 +116,118 @@
       margin-top: 20px;
     }
 
-    .btn {
+    .buy-now-btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
+      background-color: #007352;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .buy-now-btn:link,
+    .buy-now-btn:visited,
+    .buy-now-btn:hover,
+    .buy-now-btn:active {
+      color: white;
+      text-decoration: none;
+    }
+
+    .buy-now-btn:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .featured-paddles {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .featured-paddles h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      color: #007352;
+      margin-bottom: 30px;
+    }
+
+    .paddle-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .paddle-card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 320px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .paddle-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .paddle-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .paddle-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.25rem;
+      margin: 10px 0 5px;
+    }
+
+    .paddle-card .benefit {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    .paddle-card .price {
+      font-weight: bold;
+      color: #007352;
+      margin: 10px 0;
+    }
+
+    .paddle-card .badge {
+      display: inline-block;
+      background-color: #e0f8ec;
+      color: #007352;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+
+    .shop-all-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
       background-color: #A4D100;
       color: white;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 6px;
       font-weight: bold;
+      transition: background-color 0.2s ease;
     }
 
-    .buy-now-btn {
-            display: inline-block;
-            background-color: #007352;
-            padding: 12px 24px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.1s ease, box-shadow 0.1s ease;
-        }
-
-        .buy-now-btn:link,
-        .buy-now-btn:visited,
-        .buy-now-btn:hover,
-        .buy-now-btn:active {
-            color: white;
-            text-decoration: none;
-        }
-
-        .buy-now-btn:active {
-            transform: translateY(2px);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
+    .shop-all-btn:hover {
+      background-color: #89b800;
+    }
 
     @media (max-width: 768px) {
       .hero-text {
         padding: 20px;
         text-align: center;
-        background-color: #002f6d7b;
-      }
-
-      .hero-text h1 {
-        font-size: 25px;
-      }
-
-      .hero-text p {
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: 17px;
       }
 
       .products {
@@ -230,6 +281,10 @@
       .hero {
         background-image: url('media/heromobile.svg');
       }
+
+      .paddle-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -250,305 +305,63 @@
 
   <section class="hero">
     <div class="hero-text">
-      <br><br>
-      <h1>Quality, Trusted and Proven Pickleball Gear</h1>
-      <br>
-      <p>Personally tested, so you can play with confidence.</p>
-      
-      <a href="shop.html" class="buy-now-btn">Buy Now</a>
+      <h1>Skip the Google Search!</h1>
+      <p>I’ve tested the best affordable paddles, so you don’t have to.</p>
+      <h2>Handpicked, Trusted, Game-ready!</h2>
+
+      <a href="shop.html" class="buy-now-btn">See Top Picks</a>
     </div>
   </section>
 
-  <section class="section">
-    <h2 style="text-align:center;">Featured Paddles We Love</h2>
-    <div class="products">
-      <div class="product-card paddles" id='product-component-1742056606517'>
-        <script type="text/javascript">
-          /*<![CDATA[*/
-          (function () {
-            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-            if (window.ShopifyBuy) {
-              if (window.ShopifyBuy.UI) {
-                ShopifyBuyInit();
-              } else {
-                loadScript();
-              }
-            } else {
-              loadScript();
-            }
-            function loadScript() {
-              var script = document.createElement('script');
-              script.async = true;
-              script.src = scriptURL;
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-              script.onload = ShopifyBuyInit;
-            }
-            function ShopifyBuyInit() {
-              var client = ShopifyBuy.buildClient({
-                domain: '3pfktu-b2.myshopify.com',
-                storefrontAccessToken: '9e605a347414a125cd1c756334cdc3e1',
-              });
-              ShopifyBuy.UI.onReady(client).then(function (ui) {
-                ui.createComponent('product', {
-                  id: '8113414111277',
-                  node: document.getElementById('product-component-1742056606517'),
-                  moneyFormat: '%24%7B%7Bamount%7D%7D',
-                  options: {
-                    "product": {
-                      "styles": {
-                        "product": {
-                          "@media (min-width: 601px)": {
-                            "max-width": "calc(25% - 20px)",
-                            "margin-left": "20px",
-                            "margin-bottom": "50px"
-                          }
-                        },
-                        "button": {
-                          ":hover": {
-                            "background-color": "#00684a"
-                          },
-                          "background-color": "#007352",
-                          ":focus": {
-                            "background-color": "#00684a"
-                          }
-                        }
-                      },
-                      "buttonDestination": "modal",
-                      "contents": {
-                        "options": false
-                      },
-                      "text": {
-                        "button": "View product"
-                      }
-                    },
-                    "productSet": {
-                      "styles": {
-                        "products": {
-                          "@media (min-width: 601px)": {
-                            "margin-left": "-20px"
-                          }
-                        }
-                      }
-                    },
-                    "modalProduct": {
-                      "contents": {
-                        "img": false,
-                        "imgWithCarousel": true,
-                        "button": false,
-                        "buttonWithQuantity": true
-                      },
-                      "styles": {
-                        "product": {
-                          "@media (min-width: 601px)": {
-                            "max-width": "100%",
-                            "margin-left": "0px",
-                            "margin-bottom": "0px"
-                          }
-                        },
-                        "button": {
-                          ":hover": {
-                            "background-color": "#00684a"
-                          },
-                          "background-color": "#007352",
-                          ":focus": {
-                            "background-color": "#00684a"
-                          }
-                        }
-                      },
-                      "text": {
-                        "button": "Add to cart"
-                      }
-                    },
-                    "option": {},
-                    "cart": {
-                      "styles": {
-                        "button": {
-                          ":hover": {
-                            "background-color": "#00684a"
-                          },
-                          "background-color": "#007352",
-                          ":focus": {
-                            "background-color": "#00684a"
-                          }
-                        }
-                      },
-                      "text": {
-                        "total": "Subtotal",
-                        "button": "Checkout"
-                      }
-                    },
-                    "toggle": {
-                      "styles": {
-                        "toggle": {
-                          "background-color": "#007352",
-                          ":hover": {
-                            "background-color": "#00684a"
-                          },
-                          ":focus": {
-                            "background-color": "#00684a"
-                          }
-                        }
-                      }
-                    }
-                  },
-                });
-              });
-            }
-          })();
-          /*]]>*/
-        </script>
+  <section class="featured-paddles">
+    <h2>Featured Paddles We Love</h2>
+    <div class="paddle-grid">
+
+      <div class="paddle-card">
+        <img src="media/16mmhyperiongreen.webp" alt="Hyperion Green 16mm Gen 3S">
+        <h3>Hyperion Green 16mm Gen 3S</h3>
+        <p class="benefit">Balanced Power & Control – Great for Advancing Players</p>
+        <p class="price">$70.00</p>
+        <span class="badge">✅ Tested by Us</span>
+        <a href="shop.html" class="buy-now-btn">View Paddle</a>
       </div>
 
-      <div class="product-card paddles" id='product-component-1742056830228'>
-        <script type="text/javascript">
-          /*<![CDATA[*/
-          (function () {
-            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-            if (window.ShopifyBuy) {
-              if (window.ShopifyBuy.UI) {
-                ShopifyBuyInit();
-              } else {
-                loadScript();
-              }
-            } else {
-              loadScript();
-            }
-            function loadScript() {
-              var script = document.createElement('script');
-              script.async = true;
-              script.src = scriptURL;
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-              script.onload = ShopifyBuyInit;
-            }
-            function ShopifyBuyInit() {
-              var client = ShopifyBuy.buildClient({
-                domain: '3pfktu-b2.myshopify.com',
-                storefrontAccessToken: '9e605a347414a125cd1c756334cdc3e1',
-              });
-              ShopifyBuy.UI.onReady(client).then(function (ui) {
-                ui.createComponent('product', {
-                  id: '8113414045741',
-                  node: document.getElementById('product-component-1742056830228'),
-                  moneyFormat: '%24%7B%7Bamount%7D%7D',
-                  options: {
-                    "product": {
-                      "styles": {
-                        "product": {
-                          "@media (min-width: 601px)": {
-                            "max-width": "calc(25% - 20px)",
-                            "margin-left": "20px",
-                            "margin-bottom": "50px"
-                          }
-                        },
-                        "button": {
-                          ":hover": {
-                            "background-color": "#00684a"
-                          },
-                          "background-color": "#007352",
-                          ":focus": {
-                            "background-color": "#00684a"
-                          }
-                        }
-                      },
-                      "buttonDestination": "modal",
-                      "contents": {
-                        "options": false
-                      },
-                      "text": {
-                        "button": "View product"
-                      }
-                    },
-                    "productSet": {
-                      "styles": {
-                        "products": {
-                          "@media (min-width: 601px)": {
-                            "margin-left": "-20px"
-                          }
-                        }
-                      }
-                    },
-                    "modalProduct": {
-                      "contents": {
-                        "img": false,
-                        "imgWithCarousel": true,
-                        "button": false,
-                        "buttonWithQuantity": true
-                      },
-                      "styles": {
-                        "product": {
-                          "@media (min-width: 601px)": {
-                            "max-width": "100%",
-                            "margin-left": "0px",
-                            "margin-bottom": "0px"
-                          }
-                        },
-                        "button": {
-                          ":hover": {
-                            "background-color": "#00684a"
-                          },
-                          "background-color": "#007352",
-                          ":focus": {
-                            "background-color": "#00684a"
-                          }
-                        }
-                      },
-                      "text": {
-                        "button": "Add to cart"
-                      }
-                    },
-                    "option": {},
-                    "cart": {
-                      "styles": {
-                        "button": {
-                          ":hover": {
-                            "background-color": "#00684a"
-                          },
-                          "background-color": "#007352",
-                          ":focus": {
-                            "background-color": "#00684a"
-                          }
-                        }
-                      },
-                      "text": {
-                        "total": "Subtotal",
-                        "button": "Checkout"
-                      }
-                    },
-                    "toggle": {
-                      "styles": {
-                        "toggle": {
-                          "background-color": "#007352",
-                          ":hover": {
-                            "background-color": "#00684a"
-                          },
-                          ":focus": {
-                            "background-color": "#00684a"
-                          }
-                        }
-                      }
-                    }
-                  },
-                });
-              });
-            }
-          })();
-          /*]]>*/
-        </script>
+      <div class="paddle-card">
+        <img src="media/16mmperseusblue.webp" alt="Perseus Blue 16mm Gen 3S">
+        <h3>Perseus Blue 16mm Gen 3S</h3>
+        <p class="benefit">Stable Control – Great for Precision Play</p>
+        <p class="price">$70.00</p>
+        <span class="badge">✅ Tested by Us</span>
+        <a href="shop.html" class="buy-now-btn">View Paddle</a>
       </div>
 
+      <div class="paddle-card">
+        <img src="media/14mmmagnuspink.webp" alt="Magnus Pink 14mm Gen 3S">
+        <h3>Magnus Pink 14mm Gen 3S</h3>
+        <p class="benefit">Thin Core – Max Power & Pop</p>
+        <p class="price">$70.00</p>
+        <span class="badge">✅ Tested by Us</span>
+        <a href="shop.html" class="buy-now-btn">View Paddle</a>
+      </div>
+
+    </div>
+<br>
+    <a href="shop.html" class="buy-now-btn">See All Tested Paddles</a>
   </section>
 
   <section class="section">
-    <h2>About ProvenPaddles</h2>
-    <p>We're aiming to personally test and select each paddle we offer, bringing quality and affordability directly to you.</p>
-    <a href="about.html" class="buy-now-btn">Read More</a>
-
     <h2>Not sure what to get? Check out our blog for our hands-on experience on some of our products</h2>
     <a href="blog.html" class="buy-now-btn">ProvenPaddles Blog</a>
+
+    <h2>About ProvenPaddles</h2>
+    <p>We're aiming to personally test and select each paddle we offer, bringing quality and affordability directly to
+      you.</p>
+    <a href="about.html" class="buy-now-btn">Read More</a>
   </section>
 
   <footer class="footer">
-    <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="shop.html">Shop</a> | <a href="blog.HTML">Blog</a> | <a href="contact.html">Contact</a>
+    <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="shop.html">Shop</a> | <a
+      href="blog.HTML">Blog</a> | <a href="contact.html">Contact</a>
     <p>© 2025 ProvenPaddles. All Rights Reserved.</p>
   </footer>
 
