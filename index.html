@@ -140,6 +140,10 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
+    #cta.buy-now-btn {
+      background-color: #A4D100;
+    }
+
     .featured-paddles {
       padding: 40px 20px;
       text-align: center;
@@ -208,11 +212,125 @@
       margin-bottom: 10px;
     }
 
-    .shop-all-btn {
+    .trust-section {
+      padding: 40px 20px;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .trust-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      color: #007352;
+      margin-bottom: 30px;
+    }
+
+    .trust-points {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .trust-item {
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .trust-item img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+      filter: invert(26%) sepia(90%) saturate(620%) hue-rotate(130deg) brightness(94%) contrast(101%);
+    }
+
+    .trust-item img:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s ease;
+    }
+
+    .trust-item h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .trust-item p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .blog-guide {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .blog-guide h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      color: #007352;
+      margin-bottom: 15px;
+    }
+
+    .blog-guide p {
+      font-size: 1rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .blog-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .blog-card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      max-width: 350px;
+      padding: 15px;
+      text-align: left;
+    }
+
+    .blog-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .blog-card h3 {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .blog-card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .read-more {
+      font-weight: bold;
+      color: #007352;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    .blog-cta {
       display: inline-block;
       margin-top: 30px;
       padding: 12px 24px;
-      background-color: #A4D100;
+      background-color: #007352;
       color: white;
       text-decoration: none;
       border-radius: 6px;
@@ -220,8 +338,139 @@
       transition: background-color 0.2s ease;
     }
 
-    .shop-all-btn:hover {
-      background-color: #89b800;
+    .blog-cta:hover {
+      background-color: #005f44;
+    }
+
+    .about-preview {
+      padding: 40px 20px;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .about-preview h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      color: #007352;
+      margin-bottom: 20px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .about-content img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto 10px;
+      line-height: 1.5;
+    }
+
+    .testimonials {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      color: #007352;
+      margin-bottom: 30px;
+    }
+
+    .testimonial-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .testimonial {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .testimonial .quote {
+      font-size: 1rem;
+      color: #333;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .testimonial .author {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .final-cta {
+      background-color: #002f6d;
+      /* Primary green */
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .final-cta h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .final-cta p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #ffffff;
+    }
+
+    @media (min-width: 768px) {
+      .blog-cards {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .about-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+      }
+
+      .about-text {
+        max-width: 400px;
+      }
+
+      .testimonial-cards {
+        flex-direction: row;
+        justify-content: center;
+      }
     }
 
     @media (max-width: 768px) {
@@ -285,6 +534,15 @@
       .paddle-grid {
         grid-template-columns: 1fr;
       }
+
+      .trust-points {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .trust-item {
+        max-width: 250px;
+      }
     }
   </style>
 </head>
@@ -305,8 +563,8 @@
 
   <section class="hero">
     <div class="hero-text">
-      <h1>Skip the Google Search!</h1>
-      <p>I’ve tested the best affordable paddles, so you don’t have to.</p>
+      <h1>Tired of scrolling through hundreds of paddles from random sellers?</h1>
+      <p>I’ve tested the best affordable paddles, so you don’t have to guess.</p>
       <h2>Handpicked, Trusted, Game-ready!</h2>
 
       <a href="shop.html" class="buy-now-btn">See Top Picks</a>
@@ -323,7 +581,7 @@
         <p class="benefit">Balanced Power & Control – Great for Advancing Players</p>
         <p class="price">$70.00</p>
         <span class="badge">✅ Tested by Us</span>
-        <a href="shop.html" class="buy-now-btn">View Paddle</a>
+        <a href="shop.html#product-component-1742056830228" class="buy-now-btn">View Paddle</a>
       </div>
 
       <div class="paddle-card">
@@ -332,7 +590,7 @@
         <p class="benefit">Stable Control – Great for Precision Play</p>
         <p class="price">$70.00</p>
         <span class="badge">✅ Tested by Us</span>
-        <a href="shop.html" class="buy-now-btn">View Paddle</a>
+        <a href="shop.html#product-component-1742056606517" class="buy-now-btn">View Paddle</a>
       </div>
 
       <div class="paddle-card">
@@ -341,23 +599,120 @@
         <p class="benefit">Thin Core – Max Power & Pop</p>
         <p class="price">$70.00</p>
         <span class="badge">✅ Tested by Us</span>
-        <a href="shop.html" class="buy-now-btn">View Paddle</a>
+        <a href="shop.html#product-component-1742057657936" class="buy-now-btn">View Paddle</a>
       </div>
 
     </div>
-<br>
-    <a href="shop.html" class="buy-now-btn">See All Tested Paddles</a>
+    <br>
+    <a href="shop.html" class="buy-now-btn" id="cta">See All Tested Paddles</a>
   </section>
 
-  <section class="section">
-    <h2>Not sure what to get? Check out our blog for our hands-on experience on some of our products</h2>
-    <a href="blog.html" class="buy-now-btn">ProvenPaddles Blog</a>
+  <section class="trust-section">
+    <h2>Why Buy from ProvenPaddles?</h2>
+    <div class="trust-points">
 
-    <h2>About ProvenPaddles</h2>
-    <p>We're aiming to personally test and select each paddle we offer, bringing quality and affordability directly to
-      you.</p>
-    <a href="about.html" class="buy-now-btn">Read More</a>
+      <!-- Point 1 -->
+      <div class="trust-item">
+        <img src="media/tested-icon.svg" alt="Tested Icon">
+        <h3>Tested by Us or Proven Suppliers</h3>
+        <p>Every paddle is personally tested or vetted — no guesswork.</p>
+      </div>
+
+      <!-- Point 2 -->
+      <div class="trust-item">
+        <img src="media/quality-icon.svg" alt="Quality Icon">
+        <h3>Affordable Quality</h3>
+        <p>Top-tier performance without the inflated price tag.</p>
+      </div>
+
+      <!-- Point 3 -->
+      <div class="trust-item">
+        <img src="media/review-icon.svg" alt="Review Icon">
+        <h3>Detailed Reviews You Can Trust</h3>
+        <p>We write hands-on reviews so you can buy with confidence.</p>
+      </div>
+
+    </div>
   </section>
+
+
+  <section class="blog-guide">
+    <h2>Not Sure Which Paddle is Right for You?</h2>
+    <p>Our hands-on reviews break down the top paddles so you can choose confidently—no guessing, just proven picks.</p>
+
+    <div class="blog-cards">
+
+      <!-- Blog Post 1 -->
+      <div class="blog-card">
+        <img src="media/blog1-thumbnail.svg" alt="Blog Post 1">
+        <h3>A Review of the Perseus 16mm Pickleball Paddle</h3>
+        <p>We reviewed one of the best performing paddles on our store.</p>
+        <a href="blog.html#perseus-16mm-review" class="read-more">Read More</a>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="blog-card">
+        <img src="media/blog2-thumbnail.svg" alt="Blog Post 2">
+        <h3>Exploring the Hyperion 16mm Pickleball Paddle: A Personal Journey into Hybrid Design</h3>
+        <p>A full review of our favorite paddle</p>
+        <a href="blog.html#hyperion-16mm-review" class="read-more">Read More</a>
+      </div>
+
+    </div>
+
+    <a href="blog.html" class="blog-cta">Read All Paddle Reviews</a>
+  </section>
+
+  <section class="about-preview">
+    <h2>Who’s Behind ProvenPaddles?</h2>
+    <div class="about-content">
+
+      <!-- Image (can be of you or branded gear) -->
+      <img src="media/about-photo.svg" alt="Founder of ProvenPaddles">
+
+      <div class="about-text">
+        <p>I’m a fellow pickleball player who was tired of wasting money on bad gear from random online sellers. That’s
+          why I started ProvenPaddles — to test affordable paddles myself and share only the ones that truly perform.
+        </p>
+        <a href="about.html" class="buy-now-btn" id="about-buy-button">Why I Started This Shop</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Players Are Saying</h2>
+    <div class="testimonial-cards">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial">
+        <img src="media/user-blue.svg" alt="T.D. - Recreational Player">
+        <p class="quote">“I was overwhelmed shopping online, but ProvenPaddles made it easy. My paddle is perfect!”</p>
+        <p class="author">– T.D.</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial">
+        <img src="media/user-green.svg" alt="A.V. - Recreational Player">
+        <p class="quote">“I didn’t want to gamble on cheap gear. The paddle I got here is solid, and I love that I
+          didn't have to worry about the quality since it had already been tested.”</p>
+        <p class="author">– A.V.</p>
+      </div>
+    </div>
+
+    <p class="cta-note">Want to share your paddle experience?
+      <br>
+      <a href="contact.html" class="blog-cta">Leave a review</a>
+    </p>
+
+  </section>
+
+  <section class="final-cta">
+    <h2>Ready to Play Confidently?</h2>
+    <p>Shop our personally tested paddles—quality you can trust, no guesswork.</p>
+    <a href="shop.html" class="buy-now-btn" id="cta">Shop Now</a>
+  </section>
+
 
   <footer class="footer">
     <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="shop.html">Shop</a> | <a

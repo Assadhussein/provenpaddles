@@ -1731,6 +1731,24 @@
             event.target.classList.add('active');
         }
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Delay scrolling to allow dynamic content to load
+            const hash = window.location.hash;
+
+            if (hash) {
+                // Scroll again after 1 second (adjust if needed based on load time)
+                setTimeout(() => {
+                    const targetElement = document.querySelector(hash);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                }, 1000);
+            }
+        });
+    </script>
+
 </body>
 
 </html>
